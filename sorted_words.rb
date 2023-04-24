@@ -1,9 +1,17 @@
-# type any words you want!
-puts "type any word"
-# user types in any word then sort 
-user_input = gets.chomp.split.sort
-# this prints out the sorted words
-puts "#{user_input}"
-#no more words 
-puts "no more words"
 
+words=[]
+while true
+puts "type any words"
+
+# user types in any word then sort them
+user_input = gets.chomp.split(" ")
+# this prints out the sorted words in array
+  puts "#{user_input}"
+
+  break 
+  if user_input.empty?
+
+  end
+end
+
+puts words.sort

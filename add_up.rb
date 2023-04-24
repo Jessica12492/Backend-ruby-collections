@@ -1,21 +1,15 @@
 # define a method name add_up and it returns the sum of numbers
-def add_up(number1, number2)
-  return  number1 + number2
+def add_up(num)
+  sum = 0
+  for  i in 1..num do 
+      sum = sum + i
   end
-  
-  # loop begins 3 times 
-  
-  3.times do
-    # user asks to enter  the  first number input
-    puts "Enter first  number "
-    # user types in the number input
-    number1 = gets.chomp.to_i
-    # user asks to enter the second number input
-    puts "Enter second number "
-    # user types in the number input
-    number2 = gets.chomp.to_i
-    # this prints out the sum of first and second number input
-    puts "Sum is:", add_up(number1, number2);
-  end
-  
-  puts "No more numbers to add!"
+
+  puts sum 
+
+end
+
+puts  add_up(2)
+puts add_up(4)
+puts add_up(6)
+
